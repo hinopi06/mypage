@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html{
+  font-family: sans-serif;
+}
+html *{
+  box-sizing: border-box;
+}
+* {
+  margin: 0 0 0 0 ;
+  padding: 0 0 0 0 ;
+}
+body{
+  margin: 0 0 0 0;
+  background-color: #eeece9;
+}
+.wrapper{
+  margin: 0 auto 0 auto ;
+  max-width: 1000px;
+}
+#news{
+  color: #3f5170;
+  border-bottom: 3px dashed silver;
+  margin: 20px 0;
+  padding: 5px;
+}
+p{
+  line-height: 1.7;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* 共通部分 - ヘッダー -*/
+a:link{
+  color: skyblue;
+}
+a:visited{
+  color: #d25833;
+}
+a:hover{
+  opacity: 0.6;
+}
+a:active{
+  color: #ff6a3b;
+}
+.logo{
+  display: table;
+  margin: 0px 0px 30px 0;
+  line-height: 0;
+  text-align: center;
+  background-color: #59301d;
+  height: 100px;
+  width: 100%;
+}
+.logo-child{
+  display: table-cell;
+ height: 100px;
+ vertical-align: middle;
+}
+nav{
+  border-left: 5px dotted orange;
+}
+nav li{
+  display: inline;
+  list-style-type:none;
+  padding-right: 15px;
+}
+nav ul{
+  margin: 0px 0px 15px 20px;;
+}
+
+nav a:link{
+  color: skyblue;
+  text-decoration: none;
+}
+nav a:visited{
+  color: blue;
+  text-decoration: none;
+}
+nav a:hover{
+  color: orange;
+  text-decoration: none;
+}
+nav a:active{
+  color: orange;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+/* ヘッダーここまで */
+
+/* ここから index.html */
+
+.welcome{
+  border-bottom: 2px dashed silver ;
+  padding-bottom: 10px;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+  }
+.keyvisual{
+  text-align: center;
+}
+ /* ここからabout.html */
+
+.about-title{
+  border-bottom: 2px dashed silver ;
+  padding-bottom: 10px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+.about-photo{
+  float: left;
+  padding: 3em 1em 7em 0 ;
+}
+
+.clear{
+  clear: both;
+}
+.my-name{
+  text-align: center;
+}
+.my-profile{
+  border-top: 2px dashed silver ;
+  padding-top: 15px;
+  margin-top: 1em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.my-photo{
+  float: left;
+  margin-left: 200px;
+  margin-right: 5em;
+  margin-bottom: 60px;
+  border-radius: 50%;
+}
+
+/* ここから -use.html- */
+.use-title{
+  text-align: center;
+  border-bottom: 2px dashed silver ;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.use-photo{
+  text-align: center;
+}
+
+.table{
+  border-collapse: collapse;
+}
+.table th, .table td {
+  padding-left: 8px;
+  border: 1px solid #bec2c7;
+  text-align: left;
+}
+.table th{
+  width: 90px ;
+}
+
+/* ここから - contact.html - */
+.contact-title{
+  border-bottom: 2px dashed silver ;
+  padding-bottom: 10px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+.contact-photo{
+  text-align: center;
+}
+
+
+/* 共通 ここからフッター */
+
+footer{
+  clear: both;
+  background-image: url(../images/footer2.png);
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  padding: 100px 15px 0px 15px;
+  text-align: right;
+
+}
+
+/* スマホ向けCSS */
+@media (max-width: 767px) {
+
+  .wrapper{
+    margin: 0 8px;
+  }
+  .logo img{
+    width: 300px;
+  }
+
+  nav li{
+    display: block;
+  }
+  /* use.html */
+  .about-photo{
+    display:block;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .my-photo{
+    display: block;
+    margin: 0 0 30px 0;
+    height: 400px;
+    width: 100%;
+  }
+
+}
